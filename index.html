@@ -7,16 +7,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     *{margin:0;padding:0;box-sizing:border-box;font-family:'Outfit',sans-serif}
-    body{background:#fff;color:#0f172a}
-    header{padding:14px 6%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f1f5f9;background:#fff}
-    .logo{font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:800}
-    .nav a{margin-left:22px;text-decoration:none;font-size:12px;letter-spacing:1.5px;font-weight:600;color:#0f172a}
+    body{background:#fff;color:#0f172a;overflow-x:hidden}
+    header{padding:14px 6%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f1f5f9;background:#fff;flex-wrap:wrap}
+    .logo{font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:800;line-height:1.2}
+    .nav{display:flex;gap:22px;flex-wrap:wrap}
+    .nav a{text-decoration:none;font-size:12px;letter-spacing:1.5px;font-weight:600;color:#0f172a}
     
     .hero{padding:50px 6% 30px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:50px;align-items:start;max-width:1200px;margin:0 auto}
-    .hero h1{font-size:67px;line-height:0.88;letter-spacing:-3px;font-weight:800;margin-bottom:16px}
+    .hero h1{font-size:67px;line-height:0.88;letter-spacing:-3px;font-weight:800;margin-bottom:16px;word-wrap:break-word;overflow-wrap:break-word}
     .hero p{font-size:18.5px;color:#334155;line-height:1.5;margin-bottom:26px;max-width:470px}
     .buttons{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-flex;padding:16px 30px;border-radius:100px;text-decoration:none;font-weight:800;font-size:14px;background:#0f172a;color:#fff}
+    .btn{display:inline-flex;padding:16px 30px;border-radius:100px;text-decoration:none;font-weight:800;font-size:14px;background:#0f172a;color:#fff;justify-content:center}
     .btn.wa{background:#25D366}
     .btn.fb{background:#1877F2}
     
@@ -29,13 +30,25 @@
     .brands-inner h4{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#94a3b8;margin-bottom:14px}
     .brand-logos{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
     .brand-logos span{background:#fff;border:1px solid #e2e8f0;padding:9px 20px;border-radius:100px;font-weight:800;font-size:12px;color:#334155}
-    footer{padding:16px 6%;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#cbd5e1;display:flex;justify-content:space-between}
+    footer{padding:16px 6%;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#cbd5e1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+    /* THIS FIXES PHONES */
+    @media (max-width: 768px){
+      header{padding:14px 5%}
+      .nav{gap:12px}
+      .nav a{font-size:11px}
+      .hero{grid-template-columns:1fr;padding:28px 5% 20px;gap:22px}
+      .hero h1{font-size:42px !important;letter-spacing:-1.5px;line-height:0.95}
+      .hero p{font-size:16px}
+      .buttons .btn{flex:1 1 calc(50% - 6px);min-width:140px}
+      .image-grid{order:-1}
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">Air-Conditioning Services</div>
+  <div class="logo">AIR-<br>CONDITIONING<br>SERVICES</div>
   <nav class="nav">
     <a href="index.html">HOME</a>
     <a href="services.html">SERVICES</a>
@@ -45,7 +58,7 @@
 
 <section class="hero">
   <div>
-    <h1>Air-Conditioning<br>Services</h1>
+    <h1>Air-Conditioning Services</h1>
     <p>Welcome to Rishard's Air-Conditioning Services. Affordable, fast and reliable aircon services.</p>
     <div class="buttons">
       <a href="services.html" class="btn">View Services →</a>
