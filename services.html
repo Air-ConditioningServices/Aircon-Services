@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Services - Air-conditioning Services</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
@@ -12,20 +13,57 @@ header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid 
 .nav{margin-top:10px;display:flex;gap:22px;border-top:1px solid #f1f5f9;padding-top:10px}
 .nav a{text-decoration:none;font-size:12px;letter-spacing:1.5px;font-weight:800;color:#64748b}
 .nav a.active{color:#0f172a;border-bottom:2px solid #0f172a;padding-bottom:2px}
-.content{padding:28px 5% 40px;max-width:800px;margin:0 auto}
-footer{padding:18px 5%;text-align:center;border-top:1px solid #f1f5f9;margin-top:30px}
+.hero{padding:24px 5% 10px;max-width:1300px;margin:0 auto}
+.hero h1{font-size:42px;font-weight:800;letter-spacing:-1px}
+.hero p{margin-top:6px;color:#64748b;font-size:16px}
+.grid{padding:20px 5% 40px;max-width:1300px;margin:0 auto;display:grid;gap:16px;grid-template-columns:1fr}
+.card{background:#fbfcfe;border:1px solid #f1f5f9;border-radius:20px;padding:22px}
+.card h3{font-size:18px;font-weight:800;margin-bottom:10px;line-height:1.2}
+.card p{font-size:14px;color:#64748b;line-height:1.6}
+footer{padding:18px 5%;text-align:center;border-top:1px solid #f1f5f9;margin-top:20px}
 footer span{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#94a3b8;white-space:nowrap;display:block}
+@media(min-width:800px){.grid{grid-template-columns:1fr 1fr 1fr 1fr} .hero h1{font-size:48px}}
 </style>
 </head>
 <body>
+
 <header>
 <div class="logo">AIR-CONDITIONING SERVICES</div>
-<nav class="nav"><a href="index.html">HOME</a><a href="services.html" class="active">SERVICES</a><a href="contact.html">CONTACT</a></nav>
+<nav class="nav">
+<a href="index.html">HOME</a>
+<a href="services.html" class="active">SERVICES</a>
+<a href="contact.html">CONTACT</a>
+</nav>
 </header>
-<div class="content">
+
+<div class="hero">
 <h1>Our Services</h1>
-<p>Your services content here...</p>
+<p>Professional air-conditioning solutions across Durban</p>
 </div>
+
+<div class="grid">
+<div class="card">
+<h3>Installation</h3>
+<p>All brands including LG, Samsung, Carrier, Alaska, Aux, Jet-Air. Clean, level installation.</p>
+</div>
+
+<div class="card">
+<h3>Repairs & Maintenance</h3>
+<p>Fast diagnostics & fixes for leaks, compressor issues, and electrical faults. Reliable service.</p>
+</div>
+
+<div class="card">
+<h3>Regas & Service</h3>
+<p>Eco-friendly regassing and deep anti-bacterial cleaning to restore cooling efficiency.</p>
+</div>
+
+<div class="card">
+<h3>Residential & Commercial</h3>
+<p>From doctors' surgeries, shops, salons, clinics and offices etc...</p>
+</div>
+</div>
+
 <footer><span>AIR-CONDITIONING SERVICES • +27 79 996 7760</span></footer>
+
 </body>
 </html>
