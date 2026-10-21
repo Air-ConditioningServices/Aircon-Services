@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Air-conditioning Services</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Outfit',sans-serif}
-body{background:#fff;color:#0f172a;overflow-x:hidden}
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.96);backdrop-filter:blur(10px);border-bottom:1px solid #e2e8f0;padding:14px 5% 12px}
-.logo{font-size:12px;letter-spacing:3px;font-weight:800;white-space:nowrap}
+body{background:#fff;color:#0f172a}
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e2e8f0;padding:14px 5% 12px}
+.logo{font-size:12px;letter-spacing:3px;font-weight:800}
 .nav{margin-top:10px;display:flex;gap:22px;border-top:1px solid #f1f5f9;padding-top:10px}
 .nav a{text-decoration:none;font-size:12px;letter-spacing:1.5px;font-weight:800;color:#64748b}
 .nav a.active{color:#0f172a;border-bottom:2px solid #0f172a;padding-bottom:2px}
 .hero{padding:22px 5% 20px;max-width:1100px;margin:0 auto}
-.badge{display:inline-block;background:#f1f5f9;border:1px solid #e2e8f0;padding:7px 14px;border-radius:100px;font-size:10px;letter-spacing:2px;font-weight:800;color:#334155;margin-bottom:16px;text-transform:uppercase}
-.hero h1{font-size:40px;line-height:0.9;letter-spacing:-1.8px;font-weight:800;margin-bottom:12px}
-.hero h1 span{color:#64748b;font-weight:600;display:block;font-size:0.75em;letter-spacing:-1px;margin-top:3px}
-.hero p{font-size:17px;color:#475569;line-height:1.55;margin-bottom:22px;max-width:34ch}
+.badge{display:inline-flex;align-items:center;gap:6px;background:#f1f5f9;border:1px solid #e2e8f0;padding:7px 14px;border-radius:100px;font-size:11px;letter-spacing:1.5px;font-weight:800;color:#334155;margin-bottom:16px;text-transform:uppercase}
+.hero h1{font-size:42px;line-height:0.95;letter-spacing:-1.5px;font-weight:800;margin-bottom:12px}
+.hero p{font-size:17px;color:#475569;line-height:1.55;margin-bottom:22px}
 .buttons{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
-.btn{flex:1 1 calc(50% - 5px);padding:18px 10px;border-radius:100px;text-decoration:none;font-weight:800;font-size:15px;background:#0f172a;color:#fff;display:flex;justify-content:center;align-items:center}
+.btn{flex:1 1 calc(50% - 5px);padding:18px 10px;border-radius:100px;text-decoration:none;font-weight:800;font-size:15px;color:#fff;display:flex;justify-content:center}
 .btn.wa{background:#25D366}.btn.fb{background:#1877F2}.btn.services{background:#0f172a;flex-basis:100%}
 .divider{border:none;height:1px;background:#e2e8f0;margin:12px 0 24px}
-.image-grid{display:grid;gap:14px}
-.pic{width:100%;border-radius:20px;overflow:hidden;border:1px solid #e2e8f0;background:#f1f5f9}
-.pic img{width:100%;display:block}
-.brands{padding:20px 5%;background:#f8fafc;border-top:1px solid #e2e8f0;margin-top:24px}
-.brands h4{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:#94a3b8;text-align:center;margin-bottom:12px}
-.brand-logos{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-.brand-logos span{background:#fff;border:1px solid #e2e8f0;padding:8px 16px;border-radius:100px;font-weight:800;font-size:11px}
-footer{padding:16px 5%;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#94a3b8;text-align:center}
-@media(min-width:768px){.hero h1{font-size:62px}.image-grid{grid-template-columns:repeat(3,1fr)}.btn{flex:0 0 auto;padding:16px 28px}}
+.image-grid{display:grid;gap:14px}.pic{border-radius:20px;overflow:hidden;border:1px solid #e2e8f0}.pic img{width:100%;display:block}
 </style>
 </head>
 <body>
@@ -38,19 +28,25 @@ footer{padding:16px 5%;font-size:9px;letter-spacing:2px;text-transform:uppercase
 <div class="logo">AIR-CONDITIONING SERVICES</div>
 <nav class="nav"><a href="index.html" class="active">HOME</a><a href="services.html">SERVICES</a><a href="contact.html">CONTACT</a></nav>
 </header>
+
 <section class="hero">
-<div class="badge">✓ Durban • Same Day Service</div>
-<h1>Air-Conditioning <span>Services</span></h1>
-<p> Affordable and reliable aircon services in Durban.</p>
+<div class="badge">📍 Durban</div>
+<h1>Air-Conditioning Services</h1>
+<p>Affordable and reliable aircon services in Durban.</p>
+
 <div class="buttons">
 <a href="https://wa.me/27799967760" target="_blank" class="btn wa">WhatsApp</a>
 <a href="https://www.facebook.com/share/1F7iV3xh4C/" target="_blank" class="btn fb">Facebook</a>
 <a href="services.html" class="btn services">View Services</a>
 </div>
+
 <hr class="divider">
-<div class="image-grid"><div class="pic"><img src="images/Aircon1.jpeg" alt="aircon"></div><div class="pic"><img src="images/Aircon2.jpeg" alt="aircon"></div><div class="pic"><img src="images/aircon4.jpeg" alt="aircon"></div></div>
+
+<div class="image-grid">
+<div class="pic"><img src="images/Aircon1.jpeg"></div>
+<div class="pic"><img src="images/Aircon2.jpeg"></div>
+<div class="pic"><img src="images/aircon4.jpeg"></div>
+</div>
 </section>
-<section class="brands"><h4>Brands we work with</h4><div class="brand-logos"><span>LG</span><span>SAMSUNG</span><span>Carrier</span><span>ALASKA</span><span>AUX</span><span>JET-AIR</span></div></section>
-<footer>Air-Conditioning Services • +27 79 996 7760</footer>
 </body>
 </html>
