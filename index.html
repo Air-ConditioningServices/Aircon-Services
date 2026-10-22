@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Air-conditioning Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Outfit',sans-serif}
+    body{background:#fff;color:#0f172a}
+    header{padding:14px 6%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f1f5f9;background:#fff}
+    .logo{font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:800}
+    .nav a{margin-left:22px;text-decoration:none;font-size:12px;letter-spacing:1.5px;font-weight:600;color:#0f172a}
+    
+    .hero{padding:50px 6% 30px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:50px;align-items:start;max-width:1200px;margin:0 auto}
+    .hero h1{font-size:67px;line-height:0.88;letter-spacing:-3px;font-weight:800;margin-bottom:16px}
+    .hero p{font-size:18.5px;color:#334155;line-height:1.5;margin-bottom:26px;max-width:470px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;padding:16px 30px;border-radius:100px;text-decoration:none;font-weight:800;font-size:14px;background:#0f172a;color:#fff}
+    .btn.wa{background:#25D366}
+    .btn.fb{background:#1877F2}
+    
+    .image-grid{display:flex;flex-direction:column;gap:14px}
+    .image-grid .pic{width:100%;aspect-ratio:16/9.5;border-radius:18px;overflow:hidden;border:1px solid #e2e8f0;background:#f8fafc}
+    .image-grid .pic img{width:100%;height:100%;object-fit:cover;display:block}
+
+    .brands{padding:24px 6%;background:#f8fafc;border-top:1px solid #e2e8f0}
+    .brands-inner{text-align:center}
+    .brands-inner h4{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#94a3b8;margin-bottom:14px}
+    .brand-logos{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+    .brand-logos span{background:#fff;border:1px solid #e2e8f0;padding:9px 20px;border-radius:100px;font-weight:800;font-size:12px;color:#334155}
+    footer{padding:16px 6%;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#cbd5e1;display:flex;justify-content:space-between}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Air-Conditioning Services</div>
+  <nav class="nav">
+    <a href="index.html">HOME</a>
+    <a href="services.html">SERVICES</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Air-Conditioning<br>Services</h1>
+    <p>Welcome to Rishard's Air-Conditioning Services. Affordable, fast and reliable aircon services.</p>
+    <div class="buttons">
+      <a href="services.html" class="btn">View Services →</a>
+      <a href="https://wa.me/27799967760" target="_blank" class="btn wa">WhatsApp</a>
+      <a href="https://www.facebook.com/share/1F7iV3xh4C/" target="_blank" class="btn fb">Facebook</a>
+    </div>
+  </div>
+  <div class="image-grid">
+    <div class="pic"><img src="images/Aircon1.jpeg" alt=""></div>
+    <div class="pic"><img src="images/7.1.jpeg" alt=""></div>
+    <div class="pic"><img src="images/aircon4.jpeg" alt=""></div>
+  </div>
+</section>
+
+<section class="brands">
+  <div class="brands-inner">
+    <h4>Brands we work with</h4>
+    <div class="brand-logos"><span>LG</span><span>SAMSUNG</span><span>Carrier</span><span>ALASKA</span><span>AUX</span><span>JET-AIR</span></div>
+  </div>
+</section>
+
+<footer><span>Air-Conditioning Services</span><span>+27 79 996 7760</span></footer>
+</body>
+</html>
